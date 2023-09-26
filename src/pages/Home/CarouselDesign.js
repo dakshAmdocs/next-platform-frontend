@@ -10,18 +10,18 @@ import { useState } from 'react';
 const packages = [
   {
     id: 'silver',
-    name: 'Silver Plan',
+    name: 'SILVER PLAN @199 ONLY',
     description: 'Basic Features',
   },
   {
     id: 'gold',
-    name: 'Gold Plan',
-    description: 'Enhanced Features',
+    name: 'GOLD PLAN @399 ONLY',
+    description: 'Value for money',
   },
   {
     id: 'platinum',
-    name: 'Platinum Plan',
-    description: 'Premium Features',
+    name: 'PLATINUM PLAN @799 ONLY',
+    description: 'Ultra max package',
   },
 ];
 
@@ -37,12 +37,12 @@ const CarouselDesign = () => {
 
       <Carousel showThumbs={false} infiniteLoop autoPlay>
         {packages.map((pkg, index) => (
-          <Link className="btn mw-100" to={`/${pkg.id}`} >
+          <Link className="btn" to={`/${pkg.id}`} >
           <div key={index} className="package-slide">
 
-            <h2>{pkg.id}</h2>
-            <p>{pkg.name}</p>
-            <p>{pkg.description}</p>
+            {/* <h2>{pkg.id}</h2> */}
+            <h2>{pkg.name}</h2>
+            <h4>{pkg.description}</h4>
 
           </div>
           </Link>
