@@ -1,0 +1,33 @@
+
+.user-card , .family-card{
+  margin-top: 20px;
+    border: 2px solid burlywood;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    /* background-color: beige; */
+  }
+
+  .card-header {
+    margin-top: 10px;
+    /* background-color: beige; */
+    color:blueviolet;
+    font-weight: bold;
+    padding-left: 20px;
+    font-size: 1.6rem;
+  }
+  
+  .user-info, .family-list {
+    list-style: none;
+    padding-left: 20px;
+  }
+  
+  .user-info li, .family-list li {
+    margin-bottom: 10px;
+  }
+  .buttons{
+    text-align: center;
+  }
+  
+  /* Add more CSS for further customization as needed */
+  
