@@ -3,7 +3,13 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from './pages/Layout';
-import Homepage from './pages/Homepage';
+import Home from './pages/Home/Home';
+import SilverPlan from './components/Cards/SilverPlan'
+import GoldPlan from './components/Cards/GoldPlan'
+import PlatinumPlan from './components/Cards/PlatinumPlan'
+import CreateUser from './pages/CreateUser'
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,7 +17,13 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index element={<Homepage />} />
+        <Route index element={<Home />} />
+        <Route exact path="/silver" element={<SilverPlan />} />
+        <Route exact path="/gold" element={<GoldPlan />} />
+        <Route exact path="/platinum" element={<PlatinumPlan />} />
+        <Route exact path="/silver/create-user" element={<CreateUser />} />
+        <Route exact path="/gold/create-user" element={<CreateUser />} />
+        <Route exact path="/platinum/create-user" element={<CreateUser />} />
         {/* <Route path="/createUser" element={<CreateUser />} />
         <Route path="/editUser/:user_id" element={<EditUser />} />
          */}
