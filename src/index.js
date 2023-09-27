@@ -24,9 +24,9 @@ root.render(
         <Route exact path="/silver" element={<SilverPlan />} />
         <Route exact path="/gold" element={<GoldPlan />} />
         <Route exact path="/platinum" element={<PlatinumPlan />} />
-        <Route exact path="/silver/create-user" element={<CreateUser />} />
-        <Route exact path="/gold/create-user" element={<CreateUser />} />
-        <Route exact path="/platinum/create-user" element={<CreateUser />} />
+        <Route exact path="/silver/create-user/:data" element={<CreateUser />} />
+        <Route exact path="/gold/create-user/:data" element={<CreateUser />} />
+        <Route exact path="/platinum/create-user/:data" element={<CreateUser />} />
         {/* <Route path="/createUser" element={<CreateUser />} />
         <Route path="/editUser/:user_id" element={<EditUser />} />
          */}

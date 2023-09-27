@@ -49,7 +49,7 @@ function GoldPlan() {
 
           </Typography>
 
-          <Link to="/gold/create-user">
+          <Link to="/gold/create-user/Gold">
           <Button variant="contained" color="primary" sx={{ mt: 3, width: '100%' }}>
 
             Buy Now

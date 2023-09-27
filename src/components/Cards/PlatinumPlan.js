@@ -49,7 +49,7 @@ function PlatinumPlan() {
             Price: ₹ 799 /-
 
           </Typography>
-          <Link to="/platinum/create-user">
+          <Link to="/platinum/create-user/Platinum">
           <Button variant="contained" color="primary" sx={{ mt: 3, width: '100%' }}>
 
             Buy Now
