@@ -9,7 +9,7 @@ const Layout = () => {
     <Stack spacing={5} >
 
       <Appbar/>
-      <BasicModal/>
+     
       <Outlet />
     </Stack>
   )

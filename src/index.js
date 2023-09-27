@@ -9,6 +9,8 @@ import GoldPlan from './components/Cards/GoldPlan'
 import PlatinumPlan from './components/Cards/PlatinumPlan'
 import CreateUser from './pages/CreateUser'
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import UserDetails from './pages/UserDetails';
+import AddMembers from './pages/AddMembers';
 
 
 
@@ -29,6 +31,8 @@ root.render(
         <Route path="/editUser/:user_id" element={<EditUser />} />
          */}
           <Route index element={<newGrid />} />
+          <Route path="/userdetails" element={<UserDetails />} />
+          <Route path="/addmembers" element={<AddMembers />} />
       </Route>
     </Routes>
   </BrowserRouter>
