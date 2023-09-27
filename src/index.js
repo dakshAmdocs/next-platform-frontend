@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from './pages/Layout';
 import Homepage from './pages/Homepage';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -15,9 +16,11 @@ root.render(
         {/* <Route path="/createUser" element={<CreateUser />} />
         <Route path="/editUser/:user_id" element={<EditUser />} />
          */}
+          <Route index element={<newGrid />} />
       </Route>
     </Routes>
   </BrowserRouter>
+ 
 </React.StrictMode>
 );
 
