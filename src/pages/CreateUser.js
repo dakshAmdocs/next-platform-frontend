@@ -34,7 +34,7 @@ function CreateUser() {
           {/* <div className="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow"> */}
             {/* <h2 className="text-center m-4">Creat Customer</h2> */}
             <div>
-            <h2>Creat Customer</h2>
+            <h2>Create Customer</h2>
 
             <form
              onSubmit={(e) => onSubmit(e)

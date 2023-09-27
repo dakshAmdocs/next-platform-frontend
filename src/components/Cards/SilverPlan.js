@@ -2,13 +2,15 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import { Typography, Button, Container, Grid, Card, CardContent } from '@mui/material';
 
+import './SilverPlan.css'
+
  
 
 function SilverPlan() {
 
   return (
 
-    <Container maxWidth="sm" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }} className="align-middle">
+    <Container maxWidth="sm" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}} className="align-middle">
 
       <Card variant="outlined" sx={{ maxWidth: 400 }}>
 
