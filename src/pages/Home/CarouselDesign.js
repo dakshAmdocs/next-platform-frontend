@@ -9,6 +9,7 @@ import { useState } from 'react';
 import Avatar from '@mui/material/Avatar';
 import './CarouselDesign.css';
 
+
 const packages = [
   {
     id: 'silver',

@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { useParams } from 'react-router-dom';
+
 
 
 
 function CreateUser() {
     let navigate = useNavigate();
-
+    let { data } = useParams();
     const [user, setUser] = useState({
       firstName: "",
       lastName: "",
@@ -34,7 +36,7 @@ function CreateUser() {
           {/* <div className="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow"> */}
             {/* <h2 className="text-center m-4">Creat Customer</h2> */}
             <div>
-            <h2>Create Customer</h2>
+            <h2>{data} Plan Customer Details</h2>
 
             <form
              onSubmit={(e) => onSubmit(e)

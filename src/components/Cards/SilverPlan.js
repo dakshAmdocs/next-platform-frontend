@@ -48,7 +48,7 @@ function SilverPlan() {
 
           </Typography>
 
-          <Link to="/silver/create-user">
+          <Link to="/silver/create-user/Silver">
           <Button variant="contained" color="primary" sx={{ mt: 3, width: '100%' }}>
 
             Buy Now
