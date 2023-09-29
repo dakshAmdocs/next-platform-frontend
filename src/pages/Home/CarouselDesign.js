@@ -8,6 +8,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { useState } from 'react';
 import Avatar from '@mui/material/Avatar';
 import './CarouselDesign.css';
+import image from './banner-image-41.4-01-1000x491.png'
 
 
 const packages = [
@@ -41,7 +42,7 @@ const CarouselDesign = () => {
      
       <Carousel showThumbs={false} infiniteLoop autoPlay>
         {packages.map((pkg, index) => (
-            <div className="cardStyle">
+            <div className="cardStyle" style={{backgroundImage: `url${image}`}}>
           <div key={index} className="package-slide">
 
             {/* <h2>{pkg.id}</h2> */}
