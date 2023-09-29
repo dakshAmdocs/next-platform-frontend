@@ -10,7 +10,7 @@ import PlatinumPlan from './components/Cards/PlatinumPlan'
 import CreateUser from './pages/CreateUser'
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import UserDetails from './pages/UserDetails';
-import AddMembers from './pages/AddMembers';
+import AddUser from './pages/AddMembers';
 
 
 
@@ -33,7 +33,7 @@ root.render(
          */}
           <Route index element={<newGrid />} />
           <Route path="/userdetails" element={<UserDetails />} />
-          <Route path="/create-user" element={<CreateUser title = {'Add Family'} />} />
+          <Route path="/add-user" element={<AddUser title = {'Add Family'} />} />
       </Route>
     </Routes>
   </BrowserRouter>

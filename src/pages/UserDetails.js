@@ -74,7 +74,7 @@ function UserDetails() {
       </div>
       <br />
       <div className="buttons">
-        <Link className="btn btn-outline-primary mx-2" to="/create-user">
+        <Link className="btn btn-outline-primary mx-2" to="/add-user">
           Add Members
         </Link>
         <br />

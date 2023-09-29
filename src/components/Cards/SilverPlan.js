@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import { Typography, Button, Container, Grid, Card, CardContent } from '@mui/material';
 
-import './SilverPlan.css'
+
 
 const style = {
   position: 'absolute',
