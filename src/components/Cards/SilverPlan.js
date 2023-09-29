@@ -4,15 +4,27 @@ import { Typography, Button, Container, Grid, Card, CardContent } from '@mui/mat
 
 import './SilverPlan.css'
 
- 
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 500,
+  bgcolor: 'background.paper',
+  // boxShadow: 24,
+  p: 4,
+  borderRadius: 5,
+};
+// { display: 'flex', justifyContent: 'center', alignItems: 'center'}
+// { maxWidth: 400 }
 
 function SilverPlan() {
 
   return (
 
-    <Container maxWidth="sm" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}} className="align-middle">
+    <Container maxWidth="sm" sx={style} className="align-middle">
 
-      <Card variant="outlined" sx={{ maxWidth: 400 }}>
+      <Card variant="outlined" sx={style}>
 
         <CardContent>
 

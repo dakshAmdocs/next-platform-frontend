@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 
 
 
-function CreateUser() {
+function CreateUser(props) {
     let navigate = useNavigate();
     let { data } = useParams();
     const [user, setUser] = useState({
@@ -36,7 +36,7 @@ function CreateUser() {
           {/* <div className="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow"> */}
             {/* <h2 className="text-center m-4">Creat Customer</h2> */}
             <div>
-            <h2>{data} Plan Customer Details</h2>
+            <h2> {props.title}</h2>
 
             <form
              onSubmit={(e) => onSubmit(e)
@@ -149,7 +149,7 @@ function CreateUser() {
                 />
               </div> */}
 
-              
+              <br />
               <button type="submit" className="btn btn-outline-primary">
                 Submit
               </button>

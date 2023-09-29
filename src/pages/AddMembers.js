@@ -1,7 +1,17 @@
 import React, { useState } from "react";
 
 import "./AddFamilyMember.css";
-
+const style = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  // width: 600,
+  bgcolor: "background.paper",
+  // boxShadow: 700,
+  p: 4,
+  // borderRadius: 4,
+};
 function AddMembers() {
   const [familyMember, setFamilyMember] = useState({
     firstName: "",
@@ -30,7 +40,7 @@ function AddMembers() {
   };
 
   return (
-    <div className="family-member-container">
+    <div className="family-member-container" style={style}>
       <h1>Add Family Member</h1>
 
       <form onSubmit={handleSubmit}>
@@ -85,7 +95,7 @@ function AddMembers() {
             </td>
           </table>
         </div>
-        <button type="submit">Add</button>
+        <button type="submit" style={{width: 300}}>Add</button>
       </form>
     </div>
   );

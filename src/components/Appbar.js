@@ -5,22 +5,23 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Link } from "react-router-dom";
+import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
 
 const Appbar = () => {
   return (
      <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" >
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            NEXT PLATFORM
+            <Link to="/" style={{textDecoration:'none', color:'white' }}>NEXT </Link>
           </Typography>
-          <Link className="btn btn-light mx-2" to="/userdetails">
-            User
+          <Link to="/userdetails" style={{textDecoration:'none', color:'white', marginRight: 50, fontSize:'large'}}>
+          <PersonOutlineIcon />
           </Link>
         </Toolbar>
       </AppBar>
     </Box>
   )
 }
-
+//className="btn btn-light mx-2" 
 export default Appbar;

@@ -14,6 +14,7 @@ import AddMembers from './pages/AddMembers';
 
 
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -24,19 +25,18 @@ root.render(
         <Route exact path="/silver" element={<SilverPlan />} />
         <Route exact path="/gold" element={<GoldPlan />} />
         <Route exact path="/platinum" element={<PlatinumPlan />} />
-        <Route exact path="/silver/create-user/:data" element={<CreateUser />} />
-        <Route exact path="/gold/create-user/:data" element={<CreateUser />} />
-        <Route exact path="/platinum/create-user/:data" element={<CreateUser />} />
+        <Route exact path="/silver/create-user/:data" element={<CreateUser title='Enter Your Details'/>} />
+        <Route exact path="/gold/create-user/:data" element={<CreateUser title='Enter Your Details'/>} />
+        <Route exact path="/platinum/create-user/:data" element={<CreateUser title='Enter Your Details' />} />
         {/* <Route path="/createUser" element={<CreateUser />} />
         <Route path="/editUser/:user_id" element={<EditUser />} />
          */}
           <Route index element={<newGrid />} />
           <Route path="/userdetails" element={<UserDetails />} />
-          <Route path="/addmembers" element={<AddMembers />} />
+          <Route path="/create-user" element={<CreateUser title = {'Add Family'} />} />
       </Route>
     </Routes>
   </BrowserRouter>
- 
 </React.StrictMode>
 );
 

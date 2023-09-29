@@ -4,7 +4,8 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import SpacingGrid from "../pages/grid";
-
+import { Link } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 
 const style = {
@@ -12,11 +13,11 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 400,
+  width: 600,
   bgcolor: "background.paper",
-  border: "2px solid #000",
-  boxShadow: 24,
+  boxShadow: 700,
   p: 4,
+  borderRadius: 4,
 };
 
 export default function BasicModal() {
@@ -26,7 +27,10 @@ export default function BasicModal() {
 
   return (
     <div>
-      <Button onClick={handleOpen}>Change Plan</Button>
+      <br />
+      <Link className="btn btn-outline-primary mx-2" onClick ={handleOpen}>
+          Change Plan
+        </Link>
       <Modal
         open={open}
         onClose={handleClose}

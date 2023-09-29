@@ -4,14 +4,20 @@ import { Stack } from "@mui/material";
 // import Ngrid from './grid'
 import BasicModal from '../components/Modal'
 
+
+
 const Layout = () => {
   return (
+    <div>
     <Stack spacing={5} >
 
-      <Appbar/>
-     
-      <Outlet />
+      <Appbar />
+     <div className="newcontainer">
+     <Outlet   />
+     </div>
+      
     </Stack>
+    </div>
   )
 };
 

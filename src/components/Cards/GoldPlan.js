@@ -3,15 +3,25 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import { Typography, Button, Container, Grid, Card, CardContent } from '@mui/material';
 
- 
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 500,
+  bgcolor: 'background.paper',
+  // boxShadow: 24,
+  p: 4,
+  borderRadius: 5,
+};
 
 function GoldPlan() {
 
   return (
 
-    <Container maxWidth="sm" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+    <Container maxWidth="sm" sx={style}>
 
-      <Card variant="outlined" sx={{ maxWidth: 400 }}>
+      <Card variant="outlined" sx={style}>
 
         <CardContent>
 

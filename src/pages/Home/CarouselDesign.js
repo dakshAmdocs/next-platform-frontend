@@ -11,24 +11,43 @@ import './CarouselDesign.css';
 import image from './banner-image-41.4-01-1000x491.png'
 
 
+
+import Box from '@mui/material/Box';
+
+const style = {
+  top: '50%',
+  left: '50%',
+  // transform: 'translate(-50%, -50%)',
+  bgcolor: 'background.paper',
+  boxShadow: 10,
+  borderRadius: 5,
+  p: 4,
+  backgroundColor: '#9EDDFF'
+  // zIndex: -1,
+};
+
+
 const packages = [
   {
     id: 'silver',
     name: 'SILVER PLAN',
     price:  '@199 ONLY',
     description: 'Basic Features',
+    img: './images/Silver.jpg',
   },
   {
     id: 'gold',
     name: 'GOLD PLAN',
     price: '@399 ONLY',
     description: 'Value for money',
+    img:'./images/Gold.jpg',
   },
   {
     id: 'platinum',
     name: 'PLATINUM PLAN',
     price: '@799 ONLY',
     description: 'Ultra max package',
+    img: './images/Platinum.jpg',
   },
 ];
 
@@ -38,26 +57,32 @@ const packages = [
 const CarouselDesign = () => {
 
   return (
+    <>
+   
+    <Box sx={style}>
     <div className="carousel-container">
+      <Carousel showThumbs={false} infiniteLoop autoPlay  >
      
-      <Carousel showThumbs={false} infiniteLoop autoPlay>
         {packages.map((pkg, index) => (
-            <div className="cardStyle" style={{backgroundImage: `url${image}`}}>
-          <div key={index} className="package-slide">
+          <Link to={`/${pkg.id}`} style={{textDecoration: 'none'}}>
+           {console.log(pkg.img)}
+            <div className="cardStyle"  >
+          <div key={index} className="package-slide"   >
 
             {/* <h2>{pkg.id}</h2> */}
             <h2>{pkg.name}</h2>
             <h3>{pkg.price}</h3>
-            <h4>{pkg.description}</h4>
-            <Link to={`/${pkg.id}`}><button class="btn btn-primary">See More</button></Link>
+            <h4>{pkg.description}</h4>          
           </div>
           </div>
-      
+          </Link>
         ))}
+       
       </Carousel>
-
+     
     </div>
-
+    </Box>
+    </>
   );
 
 };
