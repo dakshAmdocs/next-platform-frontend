@@ -11,6 +11,8 @@ import CreateUser from './pages/CreateUser'
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import UserDetails from './pages/UserDetails';
 import AddUser from './pages/AddMembers';
+import Appbar from './components/Appbar';
+
 
 
 
@@ -18,6 +20,7 @@ import AddUser from './pages/AddMembers';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Layout />}>

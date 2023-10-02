@@ -6,11 +6,12 @@ import { Typography, Button, Container, Grid, Card, CardContent } from '@mui/mat
 
 const style = {
   position: 'absolute',
-  top: '50%',
+  top: '55%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
   width: 500,
-  bgcolor: 'background.paper',
+  bgcolor: 'rgb(0,0,0,0.75)',
+  color: 'white',
   // boxShadow: 24,
   p: 4,
   borderRadius: 5,
@@ -28,7 +29,7 @@ function SilverPlan() {
 
         <CardContent>
 
-          <Typography variant="h4" gutterBottom>
+          <Typography variant="h3" color="white" gutterBottom>
 
             Silver Package
 

@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 const bull = (
   <Box
     component="span"
-    sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
+    sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)'}}
   >
     •
   </Box>
@@ -42,7 +42,7 @@ export default function OutlinedCard(props) {
       </Typography>
     </CardContent>
     <CardActions>
-      <Button size="small" >Upgrade Now</Button>
+      <Button size="small" href={`/${props.planName}`} >Upgrade Now</Button>
     </CardActions>
   </React.Fragment></Card>
     </Box>

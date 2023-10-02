@@ -8,8 +8,22 @@
   
   
 }
+.cardStyle{
+  background-color: rgba(0,0,0,0.70);
+  /* position: fixed;  */
+   /* height: 100%; */
+  /* width: 100%; */
+  top: 10px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  z-index: 99999;
+}
 
 .package-slide{
     padding: 50px;
-
+  z-index: 999;
+  position: relative;
 }

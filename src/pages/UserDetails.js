@@ -70,16 +70,24 @@ function UserDetails() {
               </div>
             ))}
           </div>
+
         </div>
-      </div>
-      <br />
-      <div className="buttons">
-        <Link className="btn btn-outline-primary mx-2" to="/add-user">
-          Add Members
-        </Link>
         <br />
-        <BasicModal />
+        <br />
+        <div className="buttons"><div className="row">
+          <div className="mb3 col">
+            <Link className="btn btn-outline-info" to="/add-user" >
+              Add Members
+            </Link>
+          </div>
+          <div className="mb-3 col">
+            <BasicModal />
+          </div>
+        </div></div>
+        
       </div>
+
+
     </div>
   );
 }

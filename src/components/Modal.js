@@ -28,7 +28,7 @@ export default function BasicModal() {
   return (
     <div>
       <br />
-      <Link className="btn btn-outline-primary mx-2" onClick ={handleOpen}>
+      <Link className="btn btn-outline-info mx-2" onClick ={handleOpen}>
           Change Plan
         </Link>
       <Modal
@@ -39,6 +39,7 @@ export default function BasicModal() {
       >
         <Box sx={style}>
           <SpacingGrid />
+         
         </Box>
       </Modal>
     </div>

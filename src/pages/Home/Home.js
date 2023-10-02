@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Button, Stack } from '@mui/material';
 import { Link } from 'react-router-dom';
 import CarouselDesign from './CarouselDesign';
+import Appbar from '../../components/Appbar';
 
 
 const Home = () => {
@@ -9,9 +10,7 @@ const Home = () => {
     return(
         <div >
         <Stack spacing={3} alignItems={"center"}>
-           
-            <CarouselDesign/>
-           
+        <CarouselDesign/>
         </Stack>
         </div>
     )

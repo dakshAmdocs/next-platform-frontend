@@ -12,11 +12,13 @@ import {
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 //import Carousel from 'react-bootstrap/Carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { useState } from "react";
-import Avatar from "@mui/material/Avatar";
-import "./CarouselDesign.css";
-import image from "./banner-image-41.4-01-1000x491.png";
+
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { useState } from 'react';
+import Avatar from '@mui/material/Avatar';
+import './CarouselDesign.css';
+
+
 
 import Box from "@mui/material/Box";
 
@@ -24,11 +26,15 @@ const style = {
   top: "50%",
   left: "50%",
   // transform: 'translate(-50%, -50%)',
-  bgcolor: "background.paper",
+
+ 
+  background: 'none',
   boxShadow: 10,
   borderRadius: 5,
   p: 4,
-  backgroundColor: "#9EDDFF",
+  
+  // color: 'white'
+  // backgroundColor: '#9EDDFF'
   // zIndex: -1,
 };
 
@@ -74,16 +80,21 @@ const CarouselDesign = () => {
                     <h3>{pkg.price}</h3>
                     <h4>{pkg.description}</h4>
 
-                    <Link to={`/${pkg.id}`}>
-                      <button class="btn btn-outline-dark">See More</button>
-                    </Link>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </Carousel>
-        </div>
-      </Box>
+
+            {/* <h2>{pkg.id}</h2> */}
+            <h2 style={{color: 'white'}}>{pkg.name}</h2>
+            <h3 style={{color: 'white'}}>{pkg.price}</h3>
+            <h4 style={{color: 'white'}}>{pkg.description}</h4>          
+          </div>
+          </div>
+          </Link>
+        ))}
+       
+      </Carousel>
+     
+    </div>
+    </Box>
+
     </>
   );
 };
