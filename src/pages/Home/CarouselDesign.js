@@ -44,25 +44,23 @@ const packages = [
     name: "SILVER PLAN",
     price: "@199 ONLY",
     description: "Basic Features",
-    img: "./images/Silver.jpg",
+   
   },
   {
     id: "gold",
     name: "GOLD PLAN",
     price: "@399 ONLY",
     description: "Value for money",
-    img: "./images/Gold.jpg",
+    
   },
   {
     id: "platinum",
     name: "PLATINUM PLAN",
     price: "@799 ONLY",
     description: "Ultra max package",
-    img: "./images/Platinum.jpg",
   },
 ];
 
-// import './PackageCarousel.css'; // Import the CSS file
 
 const CarouselDesign = () => {
   return (
@@ -75,10 +73,6 @@ const CarouselDesign = () => {
                 {console.log(pkg.img)}
                 <div className="cardStyle">
                   <div key={index} className="package-slide">
-                    {/* <h2>{pkg.id}</h2> */}
-                    <h2>{pkg.name}</h2>
-                    <h3>{pkg.price}</h3>
-                    <h4>{pkg.description}</h4>
 
 
             {/* <h2>{pkg.id}</h2> */}

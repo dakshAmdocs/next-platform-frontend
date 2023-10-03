@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useParams } from 'react-router-dom';
-
+import { Button } from "@mui/material";
 
 
 
@@ -36,13 +36,13 @@ function CreateUser(props) {
         {/* <div className="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow"> */}
         {/* <h2 className="text-center m-4">Creat Customer</h2> */}
         <div>
-          <h2> {props.title}</h2>
+          <h2> Enter Your Details</h2><br />
 
           <form
             onSubmit={(e) => onSubmit(e)
             }
           >
-            <div className="container">
+           
               <div className="row">
                 <div className="mb-3 col">
                   <label htmlFor="FirstName" className="form-label">
@@ -122,9 +122,7 @@ function CreateUser(props) {
                   </select>
                 </div>
               </div>
-            </div>
-            <br />
-            <div className="container">
+           
               <div className="row">
                 <div className="mb-3 col">
                   <label htmlFor="username">Username</label>
@@ -160,17 +158,24 @@ function CreateUser(props) {
                 </div>
 
               </div>
-            </div>
 
 
             <br />
-            <button type="submit" className="btn btn-outline-primary">
+            <button type="submit" className="btn btn-primary">
               Submit
             </button>
-            <Link className="btn btn-outline-danger mx-2" to="/">
+            <Link className="btn btn-danger mx-2" to="/">
               Cancel
             </Link>
           </form>
+          <div><br />   
+          <p>Already Registered?</p>
+          <Link to="/login">
+          <Button variant="contained" color="success" >
+            Login
+          </Button>
+          </Link>
+          </div>
         </div >
       </div >
     </div >

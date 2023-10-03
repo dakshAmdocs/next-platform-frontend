@@ -1,15 +1,15 @@
 /* UserFamilyInfo.css */
 
 .container {
-  background-color: #f8f9fa;
+  background-color: rgb(0,0,0,0.75);
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  
+  color: white;
 }
 
 h2,h3,h4{
-  color: #333;
+  color:white;
 }
 
 .card {
@@ -35,4 +35,13 @@ h2,h3,h4{
 
 .buttons{
   text-align: center;
+}
+
+.card{
+  background-color: rgb(0,0,0,0.75);
+  color: white;
+}
+
+.card-text{
+  color: white;
 }

@@ -1,0 +1,26 @@
+.home-banner{
+   
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("../pages/Home/banner-image-37-01\ \(1\).png");
+    background-size: cover;
+    background-position: center;
+
+    /* h1{
+      font-size: 3.125rem;
+    }
+    h2{
+      font-size: 1.625rem;
+    }
+    .shadow{
+      background-color: rgba(0,0,0,.4);
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+    img{
+      max-width: 100%;
+    } */
+    }
+  
