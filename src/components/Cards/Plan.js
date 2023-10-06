@@ -1,4 +1,7 @@
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { useParams} from 'react-router-dom';
+import {useState, useEffect } from 'react'
+import axios from 'axios';
 
 import { Typography, Button, Container, Grid, Card, CardContent } from '@mui/material';
 
@@ -12,11 +15,22 @@ const style = {
   color: 'white',
   // boxShadow: 24,
   p: 4,
-  borderRadius: 5,
+  // borderRadius: 5,
 };
 
-function PlatinumPlan() {
+function Plan() {
+  let { id } = useParams(); 
+  const [plan, setPlan] = useState({includeItems: []});
 
+  useEffect(()=>{
+    const result = axios.get(`http://localhost:8080/api/customer/PlanById/${id}`).then((result) => {
+      setPlan(result.data);
+      console.log(result.data)
+    })},{})
+       
+    const listItems = plan.includeItems.map((item) =>
+  <li>{item.info}</li>
+);
   return (
 
     <Container maxWidth="sm" sx={style}>
@@ -27,7 +41,7 @@ function PlatinumPlan() {
 
           <Typography variant="h3" color= "white" gutterBottom>
 
-            Platinum Package
+            {(plan.name)} Package
 
           </Typography>
 
@@ -36,28 +50,14 @@ function PlatinumPlan() {
             Included Features:
 
           </Typography>
-
           <ul>
-
-            <li>Amazon Prime Video Content</li>
-
-            <li>Hotstar Premium Content</li>
-
-            <li>Zee Premium Content</li>
-
-            <li>Netflix Premium Content</li>
-
-            <li>4k Resolution</li>
-
-            <li>No Ads</li>
-
-            <li>Dolby Audio Supported</li>
-
+             {/* {plan.includeItems.map((item) =>{
+              <li>{item.info}</li> 
+          })} */} {listItems}
           </ul>
-
           <Typography variant="h6" sx={{ mt: 2 }}>
 
-            Price: ₹ 799 /-
+            Price: ₹ {plan.price} /-
 
           </Typography>
           <Link to="/platinum/create-user/Platinum">
@@ -79,4 +79,4 @@ function PlatinumPlan() {
 
  
 
-export default PlatinumPlan;
+export default Plan;

@@ -20,10 +20,38 @@ const style = {
 };
 
 const Login = () => {
-    // const[user, setUser] = useState('');
-    // const [validName, setValidName] = useState(false);
-    // cosnt[userFocus, setUserFocus] = useState(false);
+    const[user, setUser] = useState('');
+    const [validName, setValidName] = useState(false);
+    // const[userFocus, setUserFocus] = useState(false);
 
+    const [pwd, setPwd] = useState('');
+    const [validPwd, setValidPwd] = useState(false);
+    // const [pwdFocus, setpwdFocus] = useState(false);
+
+    const[errMsg, setErrmsg] = useState('');
+    const [success, setSuccess] = useState(false);
+
+    // useEffect(() =>{
+    //     useRef.current.focus();
+    // },[])
+
+    useEffect(()=>{
+        
+        console.log(user);
+        setValidName(user);
+    },[user]);
+
+    useEffect(()=>{
+        
+        console.log(pwd);
+        setValidPwd(pwd);
+    },[pwd])
+
+    const handleSubmit =async(e)=> {
+        e.preventDefault();
+        console.log(user, pwd);
+        setSuccess(true)
+    }
 
     return (
         <div>
@@ -40,7 +68,9 @@ const Login = () => {
                             sx ={{border: '1px solid white', borderRadius: 1, input: {color: 'white'}}}
                             id="outlined-basic"
                             type='text'
-                            // onChange={(e)=> setUser(e.target.value)}
+                            onChange={(e)=> setUser(e.target.value)}
+                            // onFocus={()=> setUserFocus(true)}
+                            // onBlur={()=>setUserFocus(false)}
 
                         />
                     </div>
@@ -53,6 +83,7 @@ const Login = () => {
                             sx ={{border: '1px solid white', borderRadius: 1,color: 'white', input: {color: 'white'}}}
                             id="outlined-required"
                             type='password'
+                            onChange={(e)=> setPwd(e.target.value)}
                             
                         />
                     </div>

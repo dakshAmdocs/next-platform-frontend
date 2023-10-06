@@ -7,24 +7,15 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Link } from 'react-router-dom';
 
-const bull = (
-  <Box
-    component="span"
-    sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)'}}
-  >
-    •
-  </Box>
-);
 
-// const card = (
-  
-// );
+
+
 
 export default function OutlinedCard(props) {
     console.log(props)
   return (
-    <Box sx={{ minWidth: 275 }}>
-      <Card variant="outlined"><React.Fragment>
+    <Box >
+      <Card variant="outlined" ><React.Fragment>
     <CardContent>
       <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
         &#8377;{props.planPrice}

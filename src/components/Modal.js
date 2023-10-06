@@ -14,10 +14,10 @@ const style = {
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: 600,
-  bgcolor: "background.paper",
+  bgcolor: "rgb(0,0,0,0)",
   boxShadow: 700,
   p: 4,
-  borderRadius: 4,
+  // borderRadius: 4,
 };
 
 export default function BasicModal() {

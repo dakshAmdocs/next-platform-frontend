@@ -1,7 +1,7 @@
 .home-banner{
    
     height: 100vh;
-    overflow: hidden;
+    overflow: auto;
     background-image: url("../pages/Home/banner-image-37-01\ \(1\).png");
     background-size: cover;
     background-position: center;
